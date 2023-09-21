@@ -1,0 +1,30 @@
+*{
+ margin:0px;
+padding:0px;
+box-sizing:border-box;
+}
+
+.container{
+padding:20px;
+}
+
+.heading{
+	text-align:center;
+	text-shadow:2px 2px green;
+	color:blue;
+}
+p{
+	margin:40px;
+	text-align:justify;
+	line-height:20px;
+	text-indent:50px;
+	font-size:20px;
+	color:green;
+	font-family:italic;
+	text-decoration-line:underline;
+	text-decoration-color:red;
+	
+}
+span{
+	text-decoration-color:red;
+}
