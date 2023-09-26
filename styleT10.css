@@ -17,14 +17,41 @@ p{
 	margin:40px;
 	text-align:justify;
 	line-height:20px;
-	text-indent:50px;
+	text-indent:100px;
 	font-size:20px;
 	color:green;
 	font-family:italic;
-	text-decoration-line:underline;
+	/*text-decoration-line:underline;*/
 	text-decoration-color:red;
 	
 }
+.123{
+	height:300px;
+	width:600px;
+	float:left;
+	font-size:30px;
+	display:inline-block;
+}
 span{
-	text-decoration-color:red;
+	color:red;
+}
+.red{
+	background-color:red;
+}
+.yellow{
+	background-color:yellow;
+}
+.pink{
+	background-color:pink;
+}
+ul{
+	float:right;
+	padding:20px;
+}
+
+li{
+	display:inline-block;
+	padding:20px;
+	text-transform:uppercase;
+	border-radius:30px;
 }
