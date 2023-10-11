@@ -111,9 +111,10 @@
 // colors.sort()
 // console.log(colors)
 
-
-
-
+let colors = ['red','green','blue','yellow']
+console.log(colors.toString())
+console.log(colors.join('______'))
+console.log(colors+'7tgb')
 
 
 
