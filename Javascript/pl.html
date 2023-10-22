@@ -1,0 +1,31 @@
+<html>
+<head> <title> JavaScript Palindrome </title>
+</head>
+<body>
+
+<script>	
+
+let string = prompt( ' Enter the string to check Palindrome ')
+let value = palindromeFun (string)
+console.log(value)
+
+function palindromeFun ( )
+{
+
+let Value = string.split ('')
+let revVal = Value.reverse() 
+let revString = revVal.join('')
+
+if (string == revString) 
+{
+alert('It is a Palindrome string ')
+}
+else {
+alert(' It is not a Palindrome string' )
+}
+}
+
+
+</script>
+	</body>
+		</html>
