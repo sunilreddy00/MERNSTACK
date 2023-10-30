@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div{
+        height: 300px;
+        width: 100%;
+      }
+      .bg-primary{
+        background-color: red;
+        border: 5px solid grey;
+    }
+      .bg-dark{
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+      
+    <div class="division_2" id="main2" name="div_2">
+      <p> Great Day</p>
+      <p> Great Day</p>
+      <p> Great Day</p>
+    </div>
+      
+  </body>
+  <script>
+  //   let main_div = document.getElementsByTagName('div')
+  //   console.log(main_div)
+  //   main_div[0].classList.add("bg-primary")
+  //   main_div[0].classList.remove("division_1")
+  //   main_div[1].classList.add("bg-dark")
+  //   main_div[0].innerHTML= `<h1>Good day</h1>`
+  //   console.log(main_div[1].innerHTML)
+  //   let p1 = document.getElementsByTagName('p')
+  //   p1[1].style.color = `#fff`
+
+  //   let all_divs = document.querySelectorAll('#main2')
+  //   console.log(all_divs)
+
+  //   all_divs.forEach((el,i) =>{
+  //    if(i%2==0){
+  //      el.classList.add("bg-primary")
+  //    }
+  //    else{
+  //     el.classList.add("bg-dark")
+  //    }
+  // })
+
+  let main_el= document.querySelector('#main2')
+    console.log(main_el)
+    let data = ""
+    for(let i=0;i<10;i++){
+      data+=`<div class="bg-primary"></div>`
+      main_el.innerHTML = data
+    }
+  </script>
+</html>
