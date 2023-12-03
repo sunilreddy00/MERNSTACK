@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      let EnteredDate = prompt("Enter a date (YYYY-MM-DD):");
+      let dateObject = new Date(EnteredDate);
+
+      if (isNaN(dateObject.getTime())) {
+        console.log("Invalid date entered. Please enter a valid date in the format YYYY-MM-DD.");
+      } else {
+        let dateNumber = dateObject.getTime();
+        console.log(`Entered Date: ${EnteredDate}`);
+        console.log(`Entered Date as a Number: ${dateNumber}`);
+      }
+
+  </script>
+  
+</body>
+</html>

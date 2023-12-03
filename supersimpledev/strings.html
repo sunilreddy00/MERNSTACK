@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heads and Tails</title>
+  <style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f1f1f1;
+    }
+
+    .container {
+    text-align: center;
+    }
+
+    button {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    }
+
+    #result {
+    font-size: 24px;
+    margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Heads and Tails Game</h1>
+        <button onclick="guess('heads')">Heads</button>
+        <button onclick="guess('tails')">Tails</button>
+        <div id="result"></div>
+    </div>
+    <script>
+      function guess(userGuess) {
+          const options = ['heads', 'tails'];
+          const randomIndex = Math.floor(Math.random() * options.length);
+          const computerGuess = options[randomIndex];
+
+          displayResult(computerGuess, userGuess);
+      }
+
+      function displayResult(computerGuess, userGuess) {
+        const resultElement = document.getElementById('result');
+        if (computerGuess === userGuess) {
+            resultElement.textContent = `Congratulations! It's ${userGuess}. You win! 🎉`;
+        } else {
+            resultElement.textContent = `Oops! It's ${computerGuess}. Better luck next time! 😕`;
+        }
+      }
+
+    </script>
+</body>
+</html>
+
+  
+</body>
+</html>

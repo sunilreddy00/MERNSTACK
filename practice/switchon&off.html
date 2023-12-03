@@ -1,0 +1,30 @@
+<!-- swith on and off -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch On/Off</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<button id="switchButton" onclick="switchOnOFF()">Switch</button>
+
+<script>
+  let isSwitchedOn = false;
+
+   function switchOnOFF() {
+    isSwitchedOn = !isSwitchedOn;
+    console.log(isSwitchedOn ? 'Switched ON' : 'Switched OFF');
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard with Chess Pieces</title>
+    <style>
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 50px);
+            grid-template-rows: repeat(8, 50px);
+            justify-content: center;
+        }
+
+        .square {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            position: relative;
+            border: 1px solid #000;
+        }
+
+        .white {
+            background-color: #f0d9b5;
+        }
+
+        .black {
+            background-color: #b58863;
+        }
+
+        .piece {
+            font-family: Arial, sans-serif;
+        }
+
+        .piece.white {
+            color: #fff;
+        }
+
+        .piece.black {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="chessboard" id="chessboard"></div>
+
+    <script>
+        const chessboard = document.getElementById("chessboard");
+
+        // Array to represent the initial state of the chessboard
+        const initialChessboard = [
+            ["♜", "♞", "♝", "♛", "♚", "♝", "♞", "♜"],
+            ["♟", "♟", "♟", "♟", "♟", "♟", "♟", "♟"],
+            ["", "", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", "", ""],
+            ["♙", "♙", "♙", "♙", "♙", "♙", "♙", "♙"],
+            ["♖", "♘", "♗", "♕", "♔", "♗", "♘", "♖"]
+        ];
+
+        // Function to create the chessboard with pieces
+        function createChessboard() {
+            for (let row = 0; row < 8; row++) {
+                for (let col = 0; col < 8; col++) {
+                    const square = document.createElement("div");
+                    square.className = "square";
+                    if ((row + col) % 2 === 0) {
+                        square.classList.add("white");
+                    } else {
+                        square.classList.add("black");
+                    }
+
+                    // Add chess pieces to the board
+                    const piece = document.createElement("div");
+                    piece.className = "piece";
+                    if (initialChessboard[row][col] !== "") {
+                        piece.textContent = initialChessboard[row][col];
+                        if (initialChessboard[row][col].charCodeAt(0) < 97) {
+                            piece.classList.add("white");
+                        } else {
+                            piece.classList.add("black");
+                        }
+                    }
+
+                    square.appendChild(piece);
+                    chessboard.appendChild(square);
+                }
+            }
+        }
+
+        createChessboard();
+    </script>
+</body>
+</html>
