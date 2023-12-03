@@ -1,4 +1,5 @@
-// src/App.js
+// App.js
+
 import React from 'react';
 import AppNavbar from './Navbar';
 import Home from './Home';

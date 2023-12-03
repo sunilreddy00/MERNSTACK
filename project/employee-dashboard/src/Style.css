@@ -56,11 +56,11 @@
 }
 
 .ml-auto .form-inline {
-  margin-right: 5px; /* Adjusted margin */
+  margin-right: 5px; 
 }
 
 #language-dropdown {
-  margin-right: 5px; /* Adjusted margin */
+  margin-right: 5px; 
 }
 
 #language-dropdown .dropdown-item {
@@ -79,7 +79,7 @@
 }
 
 #notifications {
-  margin-left: auto; /* Push notifications to the right */
+  margin-left: auto; 
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -169,7 +169,7 @@
   font-weight: bold;
   margin-left: 0px;
   margin-bottom: 10px !important;
-  background-color: blue; /* Replace with your desired default color for badges */
+  background-color: blue; 
 }
 
 .comment-badge {
@@ -187,10 +187,10 @@
 }
 
 .comment-badge {
-  background-color: blue; /* Replace with your desired default color for comments */
+  background-color: blue; 
 }
 
 .notification-badge {
-  background-color: blue; /* Replace with your desired default color for notifications */
+  background-color: blue;
 }
 
