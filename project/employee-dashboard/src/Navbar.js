@@ -48,8 +48,8 @@ const AppNavbar = () => {
             <span className='active-dot'></span>
           </div>
           <NavDropdown title='Admin' id="basic-nav-dropdown" className="text-white">
-            <NavDropdown.Item href="#action/3.1">Name 1</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Name 2</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.1">Rahul</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">Yuvan</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="#action/3.3">Logout</NavDropdown.Item>
           </NavDropdown>
