@@ -6,6 +6,7 @@ import FirstComponent from './propsContainer/FirstComponent';
 import ClickEvent from './ClickEvent';
 import Resize from './Events';
 import FormExample from './FormExample';
+import SampleArray from './SampleArray';
 
 
 const App=()=> {
@@ -20,6 +21,7 @@ const App=()=> {
       {/* <ClickEvent/> */}
       {/* <Resize/> */}
       <FormExample/>
+      <SampleArray/>
     </div>
   )
 }

@@ -1,7 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const FormExample = () => {
+
+  const notify = () => toast("Wow so easy!");
+
 
   const [userName, setUserName]= useState("")
 
@@ -14,10 +20,12 @@ const FormExample = () => {
   const userDetails = (e) =>{
     e.preventDefault()
     setNewUserDetails(userName)
+    notify()
   }
   return (
     <section className='formSection'>
       <h2>{newUserDetails}</h2>
+      <ToastContainer />
       <div className='inputdiv'>
 
         <form onSubmit={userDetails}>
